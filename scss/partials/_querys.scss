@@ -1,0 +1,84 @@
+
+
+@media (max-width:768px){
+
+    .contenedor_cards{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .header__general{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        #nav_header{
+
+            width: 100%;
+
+            .nav_header_barra{
+
+                
+
+                li a{
+
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+
+        
+
+        .search_header{
+            display: none;
+        }
+
+        .buttons_header{
+            display: none;
+        }
+
+
+    }       
+
+
+
+        
+    
+
+
+
+
+
+
+
+
+    .footer_row{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton_carusel{
+
+        display: none;
+    }
+
+    .boton_secundario{
+
+        display: flex;
+        justify-content: center;
+
+        .boton_carusel2{
+            display: block;
+        }
+    }
+
+
+
+}

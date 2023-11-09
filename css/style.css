@@ -1,112 +1,347 @@
 @font-face {
-    font-family: Blockletter;
-    src: url(../fonts/Blockletter.otf);
+  font-family: Blockletter;
+  src: url(../fonts/Blockletter.otf);
 }
-
 * {
-margin: 0px;
-padding: 0px;
-font-family: blockletter;
-list-style: none;
-text-decoration-line: none;
-color: #233565;
-font-size: 1rem;
-margin-left: 5px;
+  margin: 0px;
+  padding: 0px;
+  font-family: blockletter;
+  list-style: none;
+  text-decoration-line: none;
+  list-style-type: none;
+  font-size: 1rem;
+  color: #27CEEC;
+  box-sizing: border-box;
+  text-transform: lowercase;
+}
+* ::placeholder {
+  color: #a4d7e0;
+  margin-left: 10px;
+}
+* a:hover {
+  border-bottom: 2px solid #FD3E6A;
 }
 
+/* -----INICIO BARRA NAV --------------------------------------------------------------- */
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr 250px 200px;
+  max-height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: block;
+  border-bottom: 5px solid #0C784D;
+}
+header #check_menu {
+  display: none;
+}
+header #label_menu {
+  display: none;
+}
+header .logo_header {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+header .logo_header a img {
+  height: 100px;
+}
+header .nav_header_barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header .nav_header_barra li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #27CEEC;
+  text-transform: lowercase;
+}
+header .search_header form {
+  margin-left: 1px;
+  margin-right: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+header .search_header form input {
+  border-radius: 15%;
+  color: #27CEEC;
+}
+header .search_header form input .placeholder_buscar::-webkit-input-placeholder {
+  text-align: center;
+}
+header .search_header form input:hover {
+  color: #FD3E6A;
+}
+header .buttons_header a {
+  color: #27CEEC;
+  text-decoration: none;
+}
+header .buttons_header a i {
+  margin-right: 3px;
+}
+header #nav_mobile {
+  display: none;
+}
 
+/* final BARRA NAV ------------------------------------------------------------------- */
+.carousel-item img {
+  height: 300px;
+  width: 300px;
+}
 
-    .header_container{
+/* comienzo footer------------------------------------------------------------------------------- */
+.contenedor_footer {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 5px solid #FE3B69;
+}
+.contenedor_footer .footer_row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.contenedor_footer .footer_row .footer_link {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor_footer .footer_row .footer_link h3 {
+  margin-bottom: 15px;
+  display: inline-block;
+  border-bottom: solid grey;
+  text-align: center;
+}
+.contenedor_footer .footer_row .footer_link .nosotros_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_footer .footer_row .footer_link .nosotros_footer a {
+  text-decoration: none;
+  color: #27CEEC;
+}
+.contenedor_footer .footer_row .footer_link .faq_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.contenedor_footer .footer_row .footer_link .faq_footer li a {
+  text-decoration: none;
+  color: #27CEEC;
+}
+.contenedor_footer .footer_row .footer_link .links_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.contenedor_footer .footer_row .footer_link .links_footer li a {
+  text-decoration: none;
+  color: #27CEEC;
+}
+.contenedor_footer .footer_row .footer_link .redes_sociales_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  margin-right: 40px;
+}
+.contenedor_footer .footer_row .footer_link .redes_sociales_footer li a i {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        margin-right: 20px;
-        
-    }
+/* FINAL FOOTER ----------------------------------------------------------------- */
+/* log in page--------------------------------------------------------------------*/
+.log_in {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.log_in .img_login {
+  width: 100px;
+}
+.log_in h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.log_in .caja_inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.log_in .caja_inicio .usuario {
+  width: 75%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log_in .caja_inicio .usuario input {
+  margin-left: 30px;
+}
+.log_in .caja_inicio .contrasena {
+  width: 75%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log_in .caja_inicio .contrasena input {
+  margin-left: 5px;
+}
+.log_in .caja_inicio .boton_inicio {
+  margin-bottom: 15px;
+  text-transform: lowercase;
+}
+.log_in .caja_inicio .boton_inicio input:hover {
+  color: #FD3E6A;
+}
 
-    
+/* final log in page ------------------------------------------------------------------------ */
+/* carrousel INDEX----------------------------------------------------------------------------- */
+.boton_carusel {
+  position: absolute;
+  bottom: 200px;
+  right: 600px;
+}
 
-    .menu_container{
-width: 100%;
-height: 180px;
-        display: flex;
-grid-template-columns:  30% 70%;
-gap: 5px;
-align-items: center;
-justify-content: space-around;
+.boton_carusel2 {
+  display: none;
+}
 
+.banner2_index img {
+  width: 100%;
+  position: relative;
+}
 
+.form_suscribete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
-    }
+/* BOTON WHATSAPP-------------------------------------------------------------------- */
+.whatsapp {
+  position: fixed;
+  left: 1200px;
+}
+.whatsapp a img {
+  height: 60px;
+}
 
-    .menu_container ul {
+/* FINAL BOTON WHATSAPP--------------------------------------------------------------------- */
+/* -------cards tienda------- */
+.contenedor_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-left: 70px;
+  margin-top: 20px;
+  row-gap: 10px;
+}
 
-        display: flex;
-    
-        align-items: center;
-        justify-content: space-around;
-        margin: 10px;
-        
-    }
+.card:hover {
+  background-color: darkgrey;
+}
 
-    .menu_container ul li a {
+.contenedor_form_main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+.contenedor_form_main .form_contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_form_main .form_contenedor img {
+  width: 25%;
+}
+.contenedor_form_main .form_contenedor h2 {
+  font-size: 2rem;
+}
+.contenedor_form_main .form_contenedor .form_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.contenedor_form_main .form_contenedor .form_contacto .form_contenedor_item {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor_form_main .form_contenedor .form_contacto .form_contenedor_submit {
+  display: flex;
+  flex-direction: column;
+}
 
-        font-size: 2rem;
-        margin: 20px;
-        padding: 2px;
-    }
-
-    .menu_container .img_logo img{
-
-    height: 70px;
-    align-items: center;
+@media (max-width: 768px) {
+  .contenedor_cards {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 20px;
-    
+    align-items: center;
+  }
+  .header__general {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .header__general #nav_header {
+    width: 100%;
+  }
+  .header__general #nav_header .nav_header_barra li a {
+    font-size: 0.8rem;
+  }
+  .header__general .search_header {
+    display: none;
+  }
+  .header__general .buttons_header {
+    display: none;
+  }
+  .footer_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .boton_carusel {
+    display: none;
+  }
+  .boton_secundario {
+    display: flex;
+    justify-content: center;
+  }
+  .boton_secundario .boton_carusel2 {
+    display: block;
+  }
+}
 
-    }
-
-    .img_logo{
-
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    /* ------footer--------- */
-
-    .footer_row{
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin-bottom: 20px;
-
-    }
-
-    .footer_link h3 {
-
-        text-align: CENTER;
-        font-size: 1.5rem;
-    }
-
-    .footer_link ul{
-
-        text-align: center;
-    }
-
-   .whatsapp i{
-font-size: 3rem;
-margin-left: 10px;
-   }
-
-    /* ------footer--------- */
-
-    .galeria_index{
-    display: grid;   
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: auto;
-
-    }
-
-    
+/*# sourceMappingURL=style.css.map */
