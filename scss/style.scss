@@ -12,7 +12,6 @@ text-decoration-line: none;
 list-style-type: none;
 font-size: 1rem;
 color: #27CEEC;
-
 box-sizing: border-box;
 text-transform: lowercase;
 
@@ -37,119 +36,55 @@ text-transform: lowercase;
 
 header{
 
-    display: grid;
-    grid-template-columns: 100px 1fr 250px 200px;
-    max-height: 100px;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 100%;
-    margin-left: 10px;
-    margin-top: 3px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    position: block;
-    border-bottom: 5px solid #0C784D ;
-    
-
-    #check_menu{
-        display: none;
-    }
-    #label_menu{
-        display: none;
-    }
-
-    .logo_header{
-        height: 100px;
-        align-items: center;
-        justify-content: center;
-        a img{
-            height: 100px;
-                        
-        }
-        
-    } 
-    
-    .nav_header_barra{
+    .buttons_header{
 
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        
-        margin-top: 10px;
-        margin-bottom: 10px;
+        justify-content: end;
 
-        li a {
+        a i{
 
-            text-decoration: none;
-            list-style: none;
-            font-size: 1.5rem;
-            margin-left: 20px;
-            margin-right: 20px;
-            color: #27CEEC;
-            text-transform: lowercase;
+            font-size: 1rem;
+            margin-right: 40px;
+            margin-top: 10px;
         }
-
+    } 
     
+}  
 
-        
+.container-fluid{
+
+    .nav-item{
+
+        a {
+
+            color: #27CEEC;
+
+        }
     }
 
+    .navbar-brand{
+        img{
 
-   .search_header form {
-    
-    margin-left: 1px;
-    margin-right: 1px;
-    display: flex;
-    justify-content: space-around;
-
-    
-
-input{
-
-    border-radius: 15%;
-    color: #27CEEC;
-
-    .placeholder_buscar::-webkit-input-placeholder {
-        text-align: center;
+            width: 100px;
+        }
     }
-    
 
 
 }
-
+    
 input:hover{
     
     color: #FD3E6A;
 }
 
-   }
+   
 
-   .buttons_header  {
-
-    a{
-
-        color: #27CEEC;
-        text-decoration: none;
-
-        i{
-
-            margin-right: 3px;
-        }
-    }
+   
 
     
 
     
-   }
-
-   #nav_mobile{display: none;
-
-    
-
-   }
-
-
-   }  
+  
 
 /* final BARRA NAV ------------------------------------------------------------------- */
 

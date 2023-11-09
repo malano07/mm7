@@ -23,75 +23,25 @@
 }
 
 /* -----INICIO BARRA NAV --------------------------------------------------------------- */
-header {
-  display: grid;
-  grid-template-columns: 100px 1fr 250px 200px;
-  max-height: 100px;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 100%;
-  margin-left: 10px;
-  margin-top: 3px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  position: block;
-  border-bottom: 5px solid #0C784D;
-}
-header #check_menu {
-  display: none;
-}
-header #label_menu {
-  display: none;
-}
-header .logo_header {
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-}
-header .logo_header a img {
-  height: 100px;
-}
-header .nav_header_barra {
+header .buttons_header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-header .nav_header_barra li a {
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.5rem;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #27CEEC;
-  text-transform: lowercase;
-}
-header .search_header form {
-  margin-left: 1px;
-  margin-right: 1px;
-  display: flex;
-  justify-content: space-around;
-}
-header .search_header form input {
-  border-radius: 15%;
-  color: #27CEEC;
-}
-header .search_header form input .placeholder_buscar::-webkit-input-placeholder {
-  text-align: center;
-}
-header .search_header form input:hover {
-  color: #FD3E6A;
-}
-header .buttons_header a {
-  color: #27CEEC;
-  text-decoration: none;
+  justify-content: end;
 }
 header .buttons_header a i {
-  margin-right: 3px;
+  font-size: 1rem;
+  margin-right: 40px;
+  margin-top: 10px;
 }
-header #nav_mobile {
-  display: none;
+
+.container-fluid .nav-item a {
+  color: #27CEEC;
+}
+.container-fluid .navbar-brand img {
+  width: 100px;
+}
+
+input:hover {
+  color: #FD3E6A;
 }
 
 /* final BARRA NAV ------------------------------------------------------------------- */
