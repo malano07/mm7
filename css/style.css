@@ -13,6 +13,7 @@
   color: #27CEEC;
   box-sizing: border-box;
   text-transform: lowercase;
+  
 }
 * ::placeholder {
   color: #a4d7e0;
@@ -252,6 +253,12 @@ input:hover {
 .contenedor_form_main .form_contenedor .form_contacto .form_contenedor_submit {
   display: flex;
   flex-direction: column;
+}
+
+.mainh3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: src("..imagenes\fotos modelos\foto1.jpg");
 }
 
 @media (max-width: 768px) {
