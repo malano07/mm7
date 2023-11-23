@@ -8,19 +8,19 @@
   font-family: blockletter;
   list-style: none;
   text-decoration-line: none;
+  text-transform: none;
   list-style-type: none;
   font-size: 1rem;
-  color: #27CEEC;
+  color: black;
   box-sizing: border-box;
   text-transform: lowercase;
-  
 }
 * ::placeholder {
   color: #a4d7e0;
   margin-left: 10px;
 }
 * a:hover {
-  border-bottom: 2px solid #FD3E6A;
+  transform: translate(5px);
 }
 
 /* -----INICIO BARRA NAV --------------------------------------------------------------- */
@@ -35,10 +35,11 @@ header .buttons_header a i {
 }
 
 .container-fluid .nav-item a {
-  color: #27CEEC;
+  color: black;
 }
 .container-fluid .navbar-brand img {
   width: 100px;
+  animation: rotar 3s ease-in-out infinite;
 }
 
 input:hover {
@@ -51,9 +52,63 @@ input:hover {
   width: 300px;
 }
 
+/* nosotros page--------------- */
+.nosotros_general {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+.nosotros_general img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.nosotros_general p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ------Faq inicio contenedor------- */
+.contenedor_faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contenedor_faq .img_faq {
+  width: 100px;
+  margin-top: 30px;
+}
+.contenedor_faq h1 {
+  color: black;
+  margin-top: 30px;
+}
+.contenedor_faq h2 {
+  color: black;
+}
+.contenedor_faq ul {
+  margin-top: 30px;
+  width: 75%;
+  text-align: center;
+}
+.contenedor_faq ul b {
+  color: black;
+}
+.contenedor_faq ul li {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+
 /* comienzo footer------------------------------------------------------------------------------- */
 .contenedor_footer {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   border-top: 5px solid #FE3B69;
@@ -62,6 +117,8 @@ input:hover {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  position: relative;
+  background-color: white;
 }
 .contenedor_footer .footer_row .footer_link {
   display: flex;
@@ -83,7 +140,11 @@ input:hover {
 }
 .contenedor_footer .footer_row .footer_link .nosotros_footer a {
   text-decoration: none;
-  color: #27CEEC;
+  color: black;
+}
+.contenedor_footer .footer_row .footer_link .nosotros_footer a:hover {
+  color: #FD3E6A;
+  transform: scale(1.1);
 }
 .contenedor_footer .footer_row .footer_link .faq_footer {
   display: flex;
@@ -94,7 +155,11 @@ input:hover {
 }
 .contenedor_footer .footer_row .footer_link .faq_footer li a {
   text-decoration: none;
-  color: #27CEEC;
+  color: black;
+}
+.contenedor_footer .footer_row .footer_link .faq_footer li a:hover {
+  color: #FD3E6A;
+  transform: scale(1.1);
 }
 .contenedor_footer .footer_row .footer_link .links_footer {
   display: flex;
@@ -105,7 +170,11 @@ input:hover {
 }
 .contenedor_footer .footer_row .footer_link .links_footer li a {
   text-decoration: none;
-  color: #27CEEC;
+  color: black;
+}
+.contenedor_footer .footer_row .footer_link .links_footer li a:hover {
+  color: #FD3E6A;
+  transform: scale(1.2);
 }
 .contenedor_footer .footer_row .footer_link .redes_sociales_footer {
   display: grid;
@@ -116,16 +185,26 @@ input:hover {
 .contenedor_footer .footer_row .footer_link .redes_sociales_footer li a i {
   font-size: 1.5rem;
   text-align: center;
+  color: black;
+}
+.contenedor_footer .footer_row .footer_link .redes_sociales_footer li a i:hover {
+  color: #FD3E6A;
+  transform: scale(1.2);
 }
 
 /* FINAL FOOTER ----------------------------------------------------------------- */
 /* log in page--------------------------------------------------------------------*/
+.video_login {
+  width: 100%;
+  position: absolute;
+}
+
 .log_in {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 310px;
 }
 .log_in .img_login {
   width: 100px;
@@ -199,11 +278,19 @@ input:hover {
 
 /* BOTON WHATSAPP-------------------------------------------------------------------- */
 .whatsapp {
-  position: fixed;
-  left: 1200px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.whatsapp h4 {
+  margin-left: 10px;
 }
 .whatsapp a img {
-  height: 60px;
+  width: 100%;
 }
 
 /* FINAL BOTON WHATSAPP--------------------------------------------------------------------- */
@@ -255,12 +342,22 @@ input:hover {
   flex-direction: column;
 }
 
-.mainh3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-image: src("..imagenes\fotos modelos\foto1.jpg");
+.fondo_general {
+  max-width: 100%;
+}
+.fondo_general img {
+  width: 100%;
+  position: relative;
 }
 
+@keyframes rotar {
+  from {
+    rotate: 359deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
 @media (max-width: 768px) {
   .contenedor_cards {
     display: flex;

@@ -9,9 +9,10 @@ padding: 0px;
 font-family: blockletter;
 list-style: none;
 text-decoration-line: none;
+text-transform: none;
 list-style-type: none;
 font-size: 1rem;
-color: #27CEEC;
+color: black;
 box-sizing: border-box;
 text-transform: lowercase;
 
@@ -25,7 +26,8 @@ text-transform: lowercase;
 
  a:hover{
 
-    border-bottom: 2px solid #FD3E6A;
+    transform: translate(5px) ;    
+    
     
 
 }
@@ -57,7 +59,7 @@ header{
 
         a {
 
-            color: #27CEEC;
+            color: black;
 
         }
     }
@@ -66,6 +68,7 @@ header{
         img{
 
             width: 100px;
+            animation: rotar 3s ease-in-out infinite;
         }
     }
 
@@ -100,6 +103,89 @@ input:hover{
     }
 }
 
+/* nosotros page--------------- */
+
+
+
+
+.nosotros_general{
+    
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+      
+
+    img{
+
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    p{
+margin-left: 20px;
+margin-right: 20px;
+
+    }
+}
+
+/* ------Faq inicio contenedor------- */
+.contenedor_faq {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+
+    .img_faq{
+
+        width: 100px;
+        margin-top: 30px;
+    }
+
+
+    h1{
+        color: black;
+        margin-top: 30px;
+    }
+    
+    h2{
+        color: black;
+    }
+    
+    ul{
+
+        margin-top: 30px;
+        width: 75%;
+        text-align: center;
+
+        b{
+            color: black;
+            
+        }
+        
+
+        li{
+            margin-top: 10px;
+            color: black;
+            text-align: center;
+            
+
+        }
+    }
+
+
+}
+
+
 
 
 
@@ -111,17 +197,19 @@ input:hover{
 .contenedor_footer{
 
 
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-top: 5px solid #FE3B69;
-    ;
+        
 
     .footer_row{
 
         display: flex;            
         width: 100%;  
-        justify-content: space-around;      
+        justify-content: space-around; 
+        position: relative ;   
+        background-color: white;  
 
         .footer_link{
 
@@ -153,7 +241,15 @@ input:hover{
                 a{
 
                     text-decoration: none;
-                    color: #27CEEC;
+                    color: black;
+
+                    &:hover{
+
+                        color: #FD3E6A;
+                        transform:scale(1.1);
+                    }
+
+                   
                 }
 
             }
@@ -168,11 +264,14 @@ input:hover{
                li a{
 
                 text-decoration: none;
-                color: #27CEEC;
+                color: black;
 
+                &:hover{
 
+                    color: #FD3E6A;
+                    transform:scale(1.1);
+                }
                 }                    
-                    
             }
 
             .links_footer{
@@ -185,7 +284,15 @@ input:hover{
 
                 li a {
                     text-decoration: none;
-                color: #27CEEC;
+                color: black;
+
+                &:hover{
+
+                    color: #FD3E6A;
+                    transform:scale(1.2);
+                }
+
+                
 
 
                 }
@@ -203,6 +310,15 @@ input:hover{
 
                     font-size: 1.5rem;
                     text-align: center;
+                    color: black;
+
+                    &:hover{
+
+                        color: #FD3E6A;
+                        transform:scale(1.2);
+                    }
+
+                    
                 }
 
             }
@@ -221,7 +337,11 @@ input:hover{
 
 /* log in page--------------------------------------------------------------------*/
 
+.video_login{
 
+    width: 100%;
+    position: absolute;
+}
 
 .log_in{
 
@@ -230,7 +350,8 @@ input:hover{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 310px;
+    
 
     .img_login{
 
@@ -343,19 +464,32 @@ display: none;
 
 .whatsapp{
 
-    position: fixed;
-    left: 1200px;
-    
-    
-    a img{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10px;
 
-        height: 60px;
+    h4{
 
-        
+        margin-left: 10px;
     }
     
 
+
+    a img{
+
+        width: 100%;
+    }
+
+    
+    
+
+    
 }
+
 
 /* FINAL BOTON WHATSAPP--------------------------------------------------------------------- */
 
@@ -404,6 +538,8 @@ display: none;
             font-size: 2rem;
         }
 
+        
+
         .form_contacto{
 
             display: flex;
@@ -433,11 +569,26 @@ display: none;
     }
 }
 
-.background_image{
 
-background-image: url(../imagenes/_d85a0ee3-bf42-4793-a7d6-5521d2c7ade2.jpg);
+.fondo_general {
 
+    max-width: 100%;
+
+    img{
+
+        width: 100%;
+        position: relative;
+    }
 }
+
+@keyframes rotar {
+
+    from{rotate: 359deg;}
+    to{rotate: 0deg;}
+    
+}
+
+
     
    
     
