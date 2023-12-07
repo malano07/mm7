@@ -350,7 +350,7 @@ margin-right: 20px;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin-top: 310px;
+    margin-top: 30%;
     
 
     .img_login{
@@ -425,7 +425,64 @@ margin-right: 20px;
 
 /* final log in page ------------------------------------------------------------------------ */
 
+/* ----check out page------- */
+
+.cont_check{
+
+    display: flex;
+    justify-content: center;
+
+
+
+    .contenedor_checkout{
+
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 50px;
+        margin-left: 10px;
+        
+        
+
+        select{
+
+            margin-top: 10px;
+
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+
+
+
+    }
+
+}
+
+
+
 /* carrousel INDEX----------------------------------------------------------------------------- */
+
+.contenedor_banners{
+
+    max-width: 1100px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+
+    
+   
+
+    video{        
+        width: 100%;
+              
+    }
+}
 
 .boton_carusel{
 
@@ -443,10 +500,20 @@ display: none;
 }
 
 
-.banner2_index img{
+.banner2_index {
 
     width: 100%;
-    position: relative;
+
+    a video{
+
+        width: 100%;
+    }
+
+    img{
+
+        width: 100%;
+        position: relative;
+    }
 }
 
 .form_suscribete{
